@@ -5,7 +5,7 @@ iOS drop-in library presenting a clean-room Objective-C/Cocoa implementation of 
 
 Screenshot
 ----------
-![Screenshot](screenshots/ss1.png?raw=true)
+![Screenshot](ss1.png?raw=true)
 
 Instructions
 ------------
