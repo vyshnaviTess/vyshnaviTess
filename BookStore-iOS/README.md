@@ -1,18 +1,5 @@
 # BookStore
 
-<p align="left">
-    <a href="https://travis-ci.org/vyshnavi/BookStore-iOS" alt="Build">
-        <img src="https://travis-ci.org/vyshnavi/BookStore-iOS.svg?branch=master"/></a>
-    <a href="https://codecov.io/gh/nsoojin/BookStore-iOS">
-      <img src="https://codecov.io/gh/nsoojin/BookStore-iOS/branch/master/graph/badge.svg" /></a>
-    <a href="https://github.com/nsoojin/BookStore-iOS/pulls">
-        <img src="https://img.shields.io/badge/PRs-welcome-informational"></a>
-    <a href="https://github.com/nsoojin/BookStore/blob/master/LICENSE" alt="License">
-        <img src="https://img.shields.io/github/license/nsoojin/BookStore-iOS"/></a>
-    <a href="https://twitter.com/intent/follow?screen_name=soojinro">
-        <img src="https://img.shields.io/twitter/follow/soojinro?style=social"></a>
-</p>
-
 ### 👉 vyshnavi (https://github.com/vyshnaviTess/vyshnaviTess/blob/main/BookStore-iOS/README.md)
 
 See new releases and search for programming books from [IT Bookstore API](https://api.itbook.store)
