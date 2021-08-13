@@ -1,7 +1,11 @@
 swift-2048
 ==========
 
-iOS drop-in library presenting a clean-room Objective-C/Cocoa implementation of the game 2048.
+A working port of [iOS-2048](https://github.com/vyshnaviTess/vyshnaviTess/swift-2048) to Apple's new Swift language.
+
+Like the original Objective-C version, swift-2048 does not rely upon SpriteKit. See the description for iOS-2048 for more information.
+
+Pull requests are welcome!
 
 Screenshot
 ----------
@@ -9,9 +13,9 @@ Screenshot
 
 Instructions
 ------------
-The included sample app demonstrates the game. Simply tap the button to play. Swipe to move the tiles. For additional fun try tweaking the parameters in F3HViewController.
+You will need xcode 7 to Xcode 12 any version to run the project. Run it in the simulator or on an actual device.
 
-Create a new instance of the view controller using the provided factory method, and present it. Or manually create and configure a view and model object, and bridge them using F3HGameModelProtocol.
+Tap the button to play the game. Swipe to move the tiles.
 
 Features
 --------
