@@ -13,7 +13,7 @@
         <img src="https://img.shields.io/twitter/follow/soojinro?style=social"></a>
 </p>
 
-### 👉 [한글 버전](https://soojin.ro/blog/bookstore-ios-readme)
+### 👉 vyshnavi (https://github.com/vyshnaviTess/vyshnaviTess/blob/main/BookStore-iOS/README.md)
 
 See new releases and search for programming books from [IT Bookstore API](https://api.itbook.store)
 
