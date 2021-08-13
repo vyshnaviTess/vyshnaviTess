@@ -1,8 +1,8 @@
 # BookStore
 
 <p align="left">
-    <a href="https://travis-ci.org/nsoojin/BookStore-iOS" alt="Build">
-        <img src="https://travis-ci.org/nsoojin/BookStore-iOS.svg?branch=master"/></a>
+    <a href="https://travis-ci.org/vyshnavi/BookStore-iOS" alt="Build">
+        <img src="https://travis-ci.org/vyshnavi/BookStore-iOS.svg?branch=master"/></a>
     <a href="https://codecov.io/gh/nsoojin/BookStore-iOS">
       <img src="https://codecov.io/gh/nsoojin/BookStore-iOS/branch/master/graph/badge.svg" /></a>
     <a href="https://github.com/nsoojin/BookStore-iOS/pulls">
