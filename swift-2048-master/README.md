@@ -1,31 +1,38 @@
 swift-2048
 ==========
 
-A working port of [iOS-2048](https://github.com/austinzheng/iOS-2048) to Apple's new Swift language.
+iOS-2048
+================
 
-Like the original Objective-C version, swift-2048 does not rely upon SpriteKit. See the description for iOS-2048 for more information.
+iOS drop-in library presenting a clean-room Objective-C/Cocoa implementation of the game 2048.
 
-I'm not actively working on this, except to fix bugs and maintain compatibility with latest versions. Pull requests are welcome, though. Note that Swift was very different back when I first wrote this code, caveat emptor.
-
-
-If you want to check out a more advanced Swift project, please take a look at **[Lambdatron](https://github.com/austinzheng/Lambdatron)**, my Clojure interpreter.
+Screenshot
+----------
+![Screenshot](screenshots/ss1.png?raw=true)
 
 Instructions
 ------------
+The included sample app demonstrates the game. Simply tap the button to play. Swipe to move the tiles. For additional fun try tweaking the parameters in F3HViewController.
 
-You will need Xcode 7 to run the project. Run it in the simulator or on an actual device.
+Create a new instance of the view controller using the provided factory method, and present it. Or manually create and configure a view and model object, and bridge them using F3HGameModelProtocol.
 
-Tap the button to play the game. Swipe to move the tiles.
+Features
+--------
+- 2048, the tile-matching game, but native for iOS
+- Configure size of game board (NxN square) and winning threshold
+- Configure custom cell and cell number colors
+- Choose between button controls, swipe gesture controls, or both
+- Scoring system
+- API for informing parent of game status/victory state
+- Pretty animations, all done without SpriteKit
 
-Thoughts on Swift
------------------
-
-Swift is a well-designed language that will, hopefully, drag mainstream programming halfway to ML (kicking and screaming the entire way, of course).
-
-If you really want to see my out-of-date thoughts on Swift, check out the git history for `README.md`.
+Future Features
+---------------
+- Better win/lose screens than UIAlertViews
+- Actual library (rather than raw code hanging off a sample view controller)
 
 License
 -------
-(c) 2014-2015 Austin Zheng. Released under the terms of the MIT license.
+(c) 2014 Austin Zheng. Released under the terms of the MIT license.
 
-2048 by Gabriele Cirulli (http://gabrielecirulli.com/). The original game can be found at http://gabrielecirulli.github.io/2048/, as can all relevant attributions. 2048 is inspired by an iOS game called "Threes", by Asher Vollmer.
+2048 by Gabriele Cirulli (http://gabrielecirulli.com/). The original game can be found at http://gabrielecirulli.github.io/2048/, as can all relevant attributions. 2048 is inspired by an iOS game called [Threes](http://asherv.com/threes/), by Asher Vollmer.
