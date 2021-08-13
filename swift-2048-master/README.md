@@ -1,9 +1,6 @@
 swift-2048
 ==========
 
-iOS-2048
-================
-
 iOS drop-in library presenting a clean-room Objective-C/Cocoa implementation of the game 2048.
 
 Screenshot
