@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:vm="clr-namespace:XamarinLocation.ViewModels"
+             mc:Ignorable="d"
+             Title="Xamarin Location"
+             x:Class="XamarinLocation.Views.LocationPage">
+
+    <ContentPage.BindingContext>
+        <vm:LocationViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="0,15,0,0"></Setter>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Padding="20" VerticalOptions="Center">
+                <Button Command="{Binding CheckDeviceLocationServiceCommand}" Text="Check Device Location Services" />
+                <Label Text="{Binding DeviceLocationServiceStatus}"></Label>
+
+                <Button Command="{Binding OpenDeviceLocationSettingsPageCommand}" Text="Open Device Location Settings"/>
+                <Button Command="{Binding OpenAppSettingsPageCommand}" Text="Open App Settings"/>
+
+                <Button Command="{Binding CheckLocationPermissionsCommand}" Text="Check Location Permission Status" />
+                <Label Text="{Binding LocationPermissionStatus}"></Label>
+
+                <Button Command="{Binding GetLocationCommand}" Text="Get Location"/>
+                <Label>
+                    <Label.Text>
+                        <MultiBinding StringFormat="{}Latitude: {0}&#x0a; Longitude: {1}&#x0a; Altitude: {2}&#x0a; Accuracy: {3}">
+                            <Binding Path="Latitude" />
+                            <Binding Path="Longitude" />
+                            <Binding Path="Altitude" />
+                            <Binding Path="Accuracy" />
+                        </MultiBinding>
+                    </Label.Text>
+                </Label>
+
+            </StackLayout>
+            
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
